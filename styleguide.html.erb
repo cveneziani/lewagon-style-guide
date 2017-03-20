@@ -1,0 +1,341 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-10 col-md-offset-2">
+      <h1>Style Guide</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-2 style-guide--sidebar">
+      <ul class="list-unstyled">
+        <li><%= link_to "Frameworks", "#frameworks" %></li>
+        <li><%= link_to "Inspiration", "#inspiration" %></li>
+        <li><%= link_to "Typography", "#typography" %></li>
+        <li>
+          <strong>Base</strong>
+          <ul class="list-unstyled">
+            <li><%= link_to "Colors", "#colors" %></li>
+            <li><%= link_to "Buttons", "#buttons" %></li>
+            <li><%= link_to "Labels", "#labels" %></li>
+            <li><%= link_to "Logo", "#logo" %></li>
+            <li><%= link_to "Images", "#images" %></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Components</strong>
+          <ul class="list-unstyled">
+            <li><%= link_to "Alerts", "#alerts" %></li>
+            <li><%= link_to "Avatars", "#avatars" %></li>
+            <li><%= link_to "Badges", "#badges" %></li>
+            <li><strong>>> your components here <<</strong></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-md-10">
+      <div id="frameworks" class="style-guide--entry">
+        <h2>Frameworks</h2>
+        <p>
+          This website is based on <%= link_to "Bootstrap", "http://getbootstrap.com/" %> framework.
+          We use their <strong>grid system</strong>, typography, buttons, forms and so on.
+          Please refer to their documentation for anything that is not specified in this guide.
+        </p>
+        <p>
+          It's also based on <%= link_to "Font Awesome icons", "http://fontawesome.io/icons/" %>
+        </p>
+      </div>
+      <div id="inspiration" class="style-guide--entry">
+        <h2>Inspiration</h2>
+        <p>
+          We took inspiration from these websites:
+        </p>
+
+        <ul>
+          <li><%= link_to "Le Wagon", "https://www.lewagon.com/" %></li>
+          <li><%= link_to "Le Wagon - On Demand", "https://ondemand.lewagon.org/" %></li>
+        </ul>
+      </div>
+      <div id="typography" class="style-guide--entry">
+        <h2>Typography</h2>
+        <p>We use several fonts for different purposes:</p>
+        <ul>
+          <li><%= @base_font %> for <strong>forms</strong></li>
+          <li><%= @header_font %> for <strong>headers</strong></li>
+          <li><%= @base_font %> for any other <strong>text</strong></li>
+        </ul>
+        <h3 id="headers">Headers</h3>
+        <p>We use <%= @header_font %> font for headers. We've defined up to 6 levels but we mainly use only the first 3 ones.</p>
+        <div class="style-guide--headers">
+          <h1 class="style-guide--header">Heading Level 1</h1>
+          <h2 class="style-guide--header">Heading Level 2</h2>
+          <h3 class="style-guide--header">Heading Level 3</h3>
+          <h4 class="style-guide--header">Heading Level 4</h4>
+          <h5 class="style-guide--header">Heading Level 5</h5>
+          <h6 class="style-guide--header">Heading Level 6</h6>
+        </div>
+        <h3 id="text">Text</h3>
+        <p>We use <%= @base_font %> font for any other text such as paragraphs, lists and so on.</p>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <ul>
+              <li>Unordered list</li>
+              <li>With bullets</li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <ul class="list-unstyled">
+              <li>Unordered list</li>
+              <li>Without bullets</li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <ol>
+              <li>Ordered list</li>
+              <li>With numbers then</li>
+            </ol>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <dl>
+              <dt>Definition list</dt>
+              <dd>With a description</dd>
+            </dl>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <ul class="list-inline">
+              <li>Inlined list</li>
+              <li>Without bullets</li>
+            </ul>
+          </div>
+        </div>
+        <blockquote>
+          <p>[Blockquote] The point of the journey is not to arrive.</p>
+          <cite> Steven Frischling</cite>
+        </blockquote>
+        <h3 id="forms">Forms</h3>
+        <p>We use <%= @base_font %> font for forms.</p>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" class="form-control" id="first_name" placeholder="Bob">
+              </div>
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" class="form-control" id="last_name" placeholder="Dylan">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="base" class="style-guide--entry">
+        <h2>Base</h2>
+        <div id="colors" class="style-guide--subentry">
+          <h3>Colors</h3>
+          <div class="row style-guide--colors">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="color brand-color"></div>
+                <div class="caption">
+                  <ul class="list-unstyled">
+                    <li>$brand-color</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="color red"></div>
+                <div class="caption">
+                  <ul class="list-unstyled">
+                    <li>$red</li>
+                    <li>$brand-danger</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="color blue"></div>
+                <div class="caption">
+                  <ul class="list-unstyled">
+                    <li>$blue</li>
+                    <li>$brand-primary</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="color yellow"></div>
+                <div class="caption">
+                  <ul class="list-unstyled">
+                    <li>$yellow</li>
+                    <li>$brand-info</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="color orange"></div>
+                <div class="caption">
+                  <ul class="list-unstyled">
+                    <li>$orange</li>
+                    <li>$brand-warning</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="color green"></div>
+                <div class="caption">
+                  <ul class="list-unstyled">
+                    <li>$green</li>
+                    <li>$brand-success</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <div class="color gray"></div>
+                <div class="caption">
+                  <ul class="list-unstyled">
+                    <li>$gray</li>
+                    <li>$gray-base</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="buttons" class="style-guide--subentry">
+          <h3>Buttons</h3>
+          <div class="style-guide--buttons">
+            <ul class="list-inline">
+              <li><button type="button" class="btn btn-default">Default</button></li>
+              <li><button type="button" class="btn btn-primary">Primary</button></li>
+              <li><button type="button" class="btn btn-success">Success</button></li>
+              <li><button type="button" class="btn btn-info">Info</button></li>
+              <li><button type="button" class="btn btn-warning">Warning</button></li>
+              <li><button type="button" class="btn btn-danger">Danger</button></li>
+              <li><button type="button" class="btn btn-link">Link</button></li>
+            </ul>
+          </div>
+        </div>
+        <div id="labels" class="style-guide--subentry">
+          <h3>Labels</h3>
+          <div class="style-guide--labels">
+            <ul class="list-inline">
+              <li><span class="label label-default">Default</span></li>
+              <li><span class="label label-primary">Primary</span></li>
+              <li><span class="label label-success">Success</span></li>
+              <li><span class="label label-info">Info</span></li>
+              <li><span class="label label-warning">Warning</span></li>
+              <li><span class="label label-danger">Danger</span></li>
+            </ul>
+          </div>
+        </div>
+        <div id="logo" class="style-guide--subentry">
+          <h3>Logo</h3>
+          <div class="style-guide--logo">
+            <%= image_tag 'logo.png', width: 150 %>
+          </div>
+        </div>
+        <div id="images" class="style-guide--subentry">
+          <h3>Images</h3>
+          <div class="style-guide--images">
+            <%# OF COURSE, please use one image from app/assets/images ;) %>
+            <%# if your images have a gradient or something else, provide a class %>
+            <%= image_tag 'https://media.licdn.com/media/AAEAAQAAAAAAAAfFAAAAJDYyNmNkODg4LWU2NmMtNDczOS05ZGY4LThiMmU3NTYwODU4NQ.jpg', width: '100%' %>
+          </div>
+        </div>
+      </div>
+      <div id="components" class="style-guide--entry">
+        <h2>Components</h2>
+        <div id="alerts" class="style-guide--subentry">
+          <h3>Alerts</h3>
+          <div class="style-guide--alerts">
+            <div class="alert alert-info alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Some notice message
+            </div>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Some alert message
+            </div>
+          </div>
+        </div>
+        <div id="avatars" class="style-guide--subentry">
+          <h3>Avatars</h3>
+          <div class="style-guide--avatars">
+            <ul class="list-inline">
+              <li><%= image_tag "logo.png",  alt: "user", class: "avatar" %></li>
+              <li><%= image_tag "logo.png",  alt: "user", class: "avatar-large" %></li>
+              <li><%= image_tag "logo.png",  alt: "user", class: "avatar-bordered" %></li>
+              <li><%= image_tag "logo.png",  alt: "user", class: "avatar-square" %></li>
+            </ul>
+          </div>
+        </div>
+        <div id="badges" class="style-guide--subentry">
+          <h3>Badges</h3>
+          <div class="style-guide--badges">
+            <ul class="list-inline">
+              <li>
+                <div class="badge-container">
+                  <%= image_tag "logo.png", alt: "user", class: "avatar" %>
+                  <div class="badge">M</div>
+                </div>
+              </li>
+              <li>
+                <div class="badge-container">
+                  <%= image_tag "logo.png", alt: "user", class: "avatar" %>
+                  <div class="badge badge-red">M</div>
+                </div>
+              </li>
+              <li>
+                <div class="badge-container">
+                  <%= image_tag "logo.png", alt: "user", class: "avatar" %>
+                  <div class="badge badge-green">M</div>
+                </div>
+              </li>
+              <li>
+                <div class="badge-container">
+                  <%= image_tag "logo.png", alt: "user", class: "avatar" %>
+                  <div class="badge badge-blue">M</div>
+                </div>
+              </li>
+              <li>
+                <div class="badge-container">
+                  <%= image_tag "logo.png", alt: "user", class: "avatar" %>
+                  <div class="badge badge-black">M</div>
+                </div>
+              </li>
+              <li>
+                <div class="badge-container">
+                  <%= image_tag "logo.png", alt: "user", class: "avatar" %>
+                  <div class="badge badge-bordered">M</div>
+                </div>
+              </li>
+              <li>
+                <div class="badge-container">
+                  <i class="fa fa-envelope-o"></i>
+                  <div class="badge badge-blue">3</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="component_name" class="style-guide--subentry">
+          <h3>New component</h3>
+          <div class="style-guide--badges">
+            <strong>>> Your new component HERE <<</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

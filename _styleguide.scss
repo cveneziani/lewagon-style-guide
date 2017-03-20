@@ -1,0 +1,32 @@
+.style-guide--entry h2:not(.style-guide--header) { margin-top: 1.3em; }
+
+.style-guide--subentry h3:not(.style-guide--header) {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.style-guide--subentry {
+  background-color: #FAFAFA; // custom color only for this page
+                             // that's why it's not in variables.scss
+  padding: 1.5em;
+  margin: 1em 0;
+}
+
+.style-guide--colors {
+  .color { height: 5em; }
+
+  .brand-color { background-color: $brand-color; }
+
+  .red { background-color: $red; }
+  .blue { background-color: $blue; }
+  .yellow { background-color: $yellow; }
+  .orange { background-color: $orange; }
+  .green { background-color: $green; }
+  .gray { background-color: $gray; }
+}
+
+.style-guide--sidebar {
+  a {
+    color: $gray-base;
+  }
+}
