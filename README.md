@@ -25,6 +25,18 @@ Edit `app/assets/pages/_index.scss` and add the following line:
 @import "styleguide";
 ```
 
-Download [_styleguide.scss](https://raw.githubusercontent.com/cveneziani/lewagon-style-guide/master/_styleguide.scss) and put it inside `app/assets/stylesheets/pages/` folder.
+Download `_styleguide.scss` and put it inside `app/assets/stylesheets/pages/` folder.
 
-Download [styleguide.html.erb](https://raw.githubusercontent.com/cveneziani/lewagon-style-guide/master/styleguide.html.erb) and put it inside `app/views/pages/` folder.
+Download `styleguide.html.erb` and put it inside `app/views/pages/` folder.
+
+## How to add a color
+
+1. Add a new color inside `app/assets/styleheets/config/_variables.scss`
+2. Edit `app/views/pages/styleguide.html.erb` and insert your new color in the `Colors` section.
+3. Edit `app/assets/stylesheets/pages/_styleguide.css` to add a new CSS class for your color.
+
+## How to add a component
+
+1. Create a new file for your component inside `app/assets/stylesheets/components/` folder.
+2. Add CSS rules for your component.
+2. Edit `app/views/pages/styleguide.html.erb` and inset the HTML code for your component.
