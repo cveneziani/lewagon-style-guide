@@ -13,11 +13,10 @@ Edit the controller and add `styleguide` action:
 
 ```ruby
 # app/controllers/pages_controller.rb
-
-  def styleguide
-    @base_font   = "Open Sans"
-    @header_font = "Raleway"
-  end
+def styleguide
+  @base_font   = "Open Sans"
+  @header_font = "Raleway"
+end
 ```
 
 Edit `app/assets/pages/_index.scss` and add the following line:
@@ -26,6 +25,6 @@ Edit `app/assets/pages/_index.scss` and add the following line:
 @import "styleguide";
 ```
 
-Download `_styleguide.scss` and put it inside `app/assets/stylesheets/pages/` folder.
+Download [_styleguide.scss](https://raw.githubusercontent.com/cveneziani/lewagon-style-guide/master/_styleguide.scss) and put it inside `app/assets/stylesheets/pages/` folder.
 
-Download `styleguide.html.erb` and put it inside `app/views/pages/` folder.
+Download [styleguide.html.erb](https://raw.githubusercontent.com/cveneziani/lewagon-style-guide/master/styleguide.html.erb) and put it inside `app/views/pages/` folder.
