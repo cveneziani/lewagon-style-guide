@@ -35,97 +35,109 @@
     <div class="col-xs-12 col-md-10">
       <div id="frameworks" class="style-guide--entry">
         <h2>Frameworks</h2>
-        <p>
-          This website is based on <%= link_to "Bootstrap", "http://getbootstrap.com/" %> framework.
-          We use their <strong>grid system</strong>, typography, buttons, forms and so on.
-          Please refer to their documentation for anything that is not specified in this guide.
-        </p>
-        <p>
-          It's also based on <%= link_to "Font Awesome icons", "http://fontawesome.io/icons/" %>
-        </p>
+        <div class="style-guide--subentry">
+          <p>
+            This website is based on <%= link_to "Bootstrap", "http://getbootstrap.com/" %> framework.
+            We use their <strong>grid system</strong>, typography, buttons, forms and so on.
+            Please refer to their documentation for anything that is not specified in this guide.
+          </p>
+          <p>
+            It's also based on <%= link_to "Font Awesome icons", "http://fontawesome.io/icons/" %>
+          </p>
+        </div>
       </div>
       <div id="inspiration" class="style-guide--entry">
         <h2>Inspiration</h2>
-        <p>
-          We took inspiration from these websites:
-        </p>
+        <div class="style-guide--subentry">
+          <p>
+            We took inspiration from these websites:
+          </p>
 
-        <ul>
-          <li><%= link_to "Le Wagon", "https://www.lewagon.com/" %></li>
-          <li><%= link_to "Le Wagon - On Demand", "https://ondemand.lewagon.org/" %></li>
-        </ul>
+          <ul>
+            <li><%= link_to "Le Wagon", "https://www.lewagon.com/" %></li>
+            <li><%= link_to "Le Wagon - On Demand", "https://ondemand.lewagon.org/" %></li>
+          </ul>
+        </div>
       </div>
       <div id="typography" class="style-guide--entry">
         <h2>Typography</h2>
-        <p>We use several fonts for different purposes:</p>
-        <ul>
-          <li><%= @base_font %> for <strong>forms</strong></li>
-          <li><%= @header_font %> for <strong>headers</strong></li>
-          <li><%= @base_font %> for any other <strong>text</strong></li>
-        </ul>
-        <h3 id="headers">Headers</h3>
-        <p>We use <%= @header_font %> font for headers. We've defined up to 6 levels but we mainly use only the first 3 ones.</p>
-        <div class="style-guide--headers">
-          <h1 class="style-guide--header">Heading Level 1</h1>
-          <h2 class="style-guide--header">Heading Level 2</h2>
-          <h3 class="style-guide--header">Heading Level 3</h3>
-          <h4 class="style-guide--header">Heading Level 4</h4>
-          <h5 class="style-guide--header">Heading Level 5</h5>
-          <h6 class="style-guide--header">Heading Level 6</h6>
+        <div class="style-guide--subentry">
+          <p>We use several fonts for different purposes:</p>
+          <ul>
+            <li><%= @base_font %> for <strong>forms</strong></li>
+            <li><%= @header_font %> for <strong>headers</strong></li>
+            <li><%= @base_font %> for any other <strong>text</strong></li>
+          </ul>
         </div>
-        <h3 id="text">Text</h3>
-        <p>We use <%= @base_font %> font for any other text such as paragraphs, lists and so on.</p>
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <ul>
-              <li>Unordered list</li>
-              <li>With bullets</li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <ul class="list-unstyled">
-              <li>Unordered list</li>
-              <li>Without bullets</li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <ol>
-              <li>Ordered list</li>
-              <li>With numbers then</li>
-            </ol>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <dl>
-              <dt>Definition list</dt>
-              <dd>With a description</dd>
-            </dl>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <ul class="list-inline">
-              <li>Inlined list</li>
-              <li>Without bullets</li>
-            </ul>
+        <div class="style-guide--subentry">
+          <h3 id="headers">Headers</h3>
+          <p>We use <%= @header_font %> font for headers. We've defined up to 6 levels but we mainly use only the first 3 ones.</p>
+          <div class="style-guide--headers">
+            <h1 class="style-guide--header">Heading Level 1</h1>
+            <h2 class="style-guide--header">Heading Level 2</h2>
+            <h3 class="style-guide--header">Heading Level 3</h3>
+            <h4 class="style-guide--header">Heading Level 4</h4>
+            <h5 class="style-guide--header">Heading Level 5</h5>
+            <h6 class="style-guide--header">Heading Level 6</h6>
           </div>
         </div>
-        <blockquote>
-          <p>[Blockquote] The point of the journey is not to arrive.</p>
-          <cite> Steven Frischling</cite>
-        </blockquote>
-        <h3 id="forms">Forms</h3>
-        <p>We use <%= @base_font %> font for forms.</p>
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <form>
-              <div class="form-group">
-                <label for="first_name">First Name</label>
-                <input type="text" class="form-control" id="first_name" placeholder="Bob">
-              </div>
-              <div class="form-group">
-                <label for="last_name">Last Name</label>
-                <input type="text" class="form-control" id="last_name" placeholder="Dylan">
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+        <div class="style-guide--subentry">
+          <h3 id="text">Text</h3>
+          <p>We use <%= @base_font %> font for any other text such as paragraphs, lists and so on.</p>
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <ul>
+                <li>Unordered list</li>
+                <li>With bullets</li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <ul class="list-unstyled">
+                <li>Unordered list</li>
+                <li>Without bullets</li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <ol>
+                <li>Ordered list</li>
+                <li>With numbers then</li>
+              </ol>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <dl>
+                <dt>Definition list</dt>
+                <dd>With a description</dd>
+              </dl>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <ul class="list-inline">
+                <li>Inlined list</li>
+                <li>Without bullets</li>
+              </ul>
+            </div>
+          </div>
+          <blockquote>
+            <p>[Blockquote] The point of the journey is not to arrive.</p>
+            <cite> Steven Frischling</cite>
+          </blockquote>
+        </div>
+        <div class="style-guide--subentry">
+          <h3 id="forms">Forms</h3>
+          <p>We use <%= @base_font %> font for forms.</p>
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <form>
+                <div class="form-group">
+                  <label for="first_name">First Name</label>
+                  <input type="text" class="form-control" id="first_name" placeholder="Bob">
+                </div>
+                <div class="form-group">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" class="form-control" id="last_name" placeholder="Dylan">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
