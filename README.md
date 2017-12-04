@@ -38,5 +38,6 @@ Download [styleguide.html.erb](https://raw.githubusercontent.com/cveneziani/lewa
 ## How to add a component
 
 1. Create a new file for your component inside `app/assets/stylesheets/components/` folder.
-2. Add CSS rules for your component.
-2. Edit `app/views/pages/styleguide.html.erb` and inset the HTML code for your component.
+2. Import it from `app/assets/stylesheets/components/_index.scss`
+3. Add CSS rules for your component.
+4. Edit `app/views/pages/styleguide.html.erb` and insert the HTML code for your component.
